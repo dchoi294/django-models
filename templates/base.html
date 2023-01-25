@@ -1,3 +1,6 @@
+{% load compress %}
+{% load static %}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,13 +8,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Django snacks</title>
+    <title>Django Models</title>
 </head>
 <body>
 
-{% block content %}
+    <nav>
+        <a href="{% url 'snack_list' %}">Home</a>
+    </nav>
 
-{% endblock content %}
+    {% block content %}
+
+    {% endblock content %}
 
 
 
