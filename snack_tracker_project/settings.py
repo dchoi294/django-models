@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-3*uh%#fx)5&3+f^s60+iq+6(mkbw*znc4s0d^%^ltkgu!-)g0g'
+SECRET_KEY = 'django-insecure-$%c&_=onl7y__mghf(ufkbw5r$0ms1^x!e22#auly2+z84djv='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'snacks',
-    'compressor',
+    'compressor'
 ]
 
 MIDDLEWARE = [
@@ -124,7 +124,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Compressor settings
+# Django compressor settings
 COMPRESS_ROOT = BASE_DIR / 'static'
 
 COMPRESS_ENABLED = True
